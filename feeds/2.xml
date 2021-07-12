@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>Portswigger</title>
+        <link>https://portswigger.net/daily-swig</link>
+        <description>Portswigger</description>
+        <lastBuildDate>Mon, 12 Jul 2021 15:18:09 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>awesome</generator>
+        <language>en</language>
+        <image>
+            <title>Portswigger</title>
+            <url>https://remyhax.xyz/image/profile.jpg</url>
+            <link>https://portswigger.net/daily-swig</link>
+        </image>
+        <copyright>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</copyright>
+        <item>
+            <title><![CDATA[Microsoft paid out $14m in bug bounty rewards in past 12 months – report | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/microsoft-paid-out-14m-in-bug-bounty-rewards-in-past-12-months-report</link>
+            <guid>https://portswigger.net/daily-swig/microsoft-paid-out-14m-in-bug-bounty-rewards-in-past-12-months-report</guid>
+            <pubDate>Mon, 12 Jul 2021 15:17:46 GMT</pubDate>
+            <content:encoded><![CDATA[Microsoft paid out $14m in bug bounty rewards in past 12 months – report
+Jessica Haworth 12 July 2021 at 14:00 UTC
+Updated: 12 July 2021 at 14:02 UTC
+Microsoft Bug Bounty Vulnerabilities
+
+Security researchers received an average of $10k per report
+
+
+
+
+Microsoft has awarded $13.6 million to security researchers under it bug bounty program in the past 12 months alone.
+
+The tech giant, which runs a number of technology-specific programs under the umbrella of its coordinated vulnerability disclosure (CVD) program, revealed the figure in a blog post.
+
+Its single highest reward was $200k, which was handed out for the discovery of vulnerabilities in its Hyper V program.
+
+Microsoft also revealed that in the past year, security researchers netted an average of $10k per report.
+
+Payouts
+
+The rewards were given to more than 340 security researchers across 58 countries, said Microsoft, adding that 1,200 of the reports it received were eligible for a payout.
+
+Microsoft said the sheer volume of reports reflects the “talent and creativity of the global security research community and their invaluable partnership in addressing the challenges of a constantly changing security environment”.
+
+The company also said that it is “constantly evaluating” the threat landscape in order to makes changes to the program and respond accordingly.
+
+
+
+
+Read more of the latest bug bounty news
+
+
+“This year, we introduced new challenges and scenarios to award research focused on the highest impact to customer security,” said Microsoft.
+
+“These focus areas helped us not only discover and fix risks to customer privacy and security, but also offer researchers top awards for their high-impact work.”
+
+
+
+
+YOU MAY LIKE Microsoft Edge Translator contained uXSS flaw exploitable ‘on any web page’
+
+Microsoft Bug Bounty Vulnerabilities Windows Industry News Secure Development Organizations Hacking News
+
+Jessica Haworth
+
+@JesscaHaworth
+
+Latest Posts
+Instant replay
+Research exposes vulnerabilities in IP camera firmware used by multiple vendors
+Eight arrests made as Eurojust dismantles €2m phishing fraud
+Less.js flaw causes website to leak AWS secret keys
+Issues in plugin feature can leave users at risk
+Related stories
+Instant replay
+Research exposes vulnerabilities in IP camera firmware used by multiple vendors
+12 July 2021
+Bug bounty report
+Microsoft paid out $14m in rewards in the past 12 months
+12 July 2021
+Eight arrests made as Eurojust dismantles €2m phishing fraud
+12 July 2021
+Less.js flaw causes website to leak AWS secret keys
+09 July 2021
+
+Burp Suite
+
+Web vulnerability scanner
+Burp Suite Editions
+Release Notes
+ 
+
+Vulnerabilities
+
+Cross-site scripting (XSS)
+SQL injection
+Cross-site request forgery
+XML external entity injection
+Directory traversal
+Server-side request forgery
+ 
+
+Customers
+
+Organizations
+Testers
+Developers
+ 
+
+Company
+
+About
+PortSwigger News
+Careers
+Contact
+Legal
+Privacy Notice
+ 
+
+Insights
+
+Web Security Academy
+Blog
+Research
+The Daily Swig
+ 
+Follow us
+
+© 2021 PortSwigger Ltd.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Research exposes vulnerabilities in IP camera firmware used by multiple vendors | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/research-exposes-vulnerabilities-in-ip-camera-firmware-used-by-multiple-vendors</link>
+            <guid>https://portswigger.net/daily-swig/research-exposes-vulnerabilities-in-ip-camera-firmware-used-by-multiple-vendors</guid>
+            <pubDate>Mon, 12 Jul 2021 15:17:45 GMT</pubDate>
+            <content:encoded><![CDATA[Research exposes vulnerabilities in IP camera firmware used by multiple vendors
+John Leyden 12 July 2021 at 15:14 UTC
+IoT Network Security Vulnerabilities
+
+Flawed UDP code bundled in CCTV devices from Geutebrück, VCA, and Sprinx Technologies
+
+Security researchers at Randorisec have uncovered numerous severe vulnerabilities in IP camera firmware from UDP Technology.
+
+UDP firmware is bundled in cameras from a variety of vendors including Geutebrück, VCA, Sprinx Technologies, and others.
+
+French security consultancy Randorisec said it had previously discovered several critical vulnerabilities in the firmware, ranging from authentication bypass to remote code execution (RCE).
+
+Based on these earlier shortcomings, Randorisec took another pass at UDP technology, discovering a further 11 authenticated remote code execution (RCE) and a complete authentication bypass vulnerabilities in the process.
+
+Instant replay
+
+In a detailed technical blog post, Randorisec researchers offer a step-by-step explanation of how they discovered command injection and stack-based buffer overflow flaws.
+
+Further progress along the journey allowed them to uncover the authentication bypass vulnerabilities and develop proof-of-concept RCE exploits.
+
+
+
+
+Catch up on the latest IoT security research news
+
+
+
+
+Randorisec disclosed the vulnerabilities in February and, following an extended disclosure engagement with Geutebrück, finally resolved with the release of firmware that corrected the vulnerabilities earlier this month.
+
+This cleared the way for Randorisec to publish its blog post documenting the vulnerabilities.
+
+These various flaws are tracked as CVE-2021-33543 through to CVE-2021-33554.
+
+Got root?
+
+Davy Douhine, a security researcher at Randorisec, told The Daily Swig that exploiting any of the vulnerabilities opened up the door to all manner of mischief.
+
+“Combining this authentication bypass [with] any of the RCE [vulnerabilities] gave us a root shell,” Douhine explained.
+
+“From there you can do whatever you want – the camera is ‘jailbroken’. [An attacker could] stop the video stream, change it, use it as a relay to the connected network.”
+
+
+
+
+RELATED Firmware vulnerabilities in Netgear routers created security risk
+
+IoT Network Security Vulnerabilities Hacking News Research RCE France Europe Hardware China Asia Hacking Techniques Privacy Supply Chain Attacks Authentication
+
+John Leyden
+
+@jleyden
+
+Latest Posts
+Bug bounty report
+Microsoft paid out $14m in rewards in the past 12 months
+Eight arrests made as Eurojust dismantles €2m phishing fraud
+Less.js flaw causes website to leak AWS secret keys
+Issues in plugin feature can leave users at risk
+Related stories
+Instant replay
+Research exposes vulnerabilities in IP camera firmware used by multiple vendors
+12 July 2021
+Bug bounty report
+Microsoft paid out $14m in rewards in the past 12 months
+12 July 2021
+Eight arrests made as Eurojust dismantles €2m phishing fraud
+12 July 2021
+Less.js flaw causes website to leak AWS secret keys
+09 July 2021
+
+Burp Suite
+
+Web vulnerability scanner
+Burp Suite Editions
+Release Notes
+ 
+
+Vulnerabilities
+
+Cross-site scripting (XSS)
+SQL injection
+Cross-site request forgery
+XML external entity injection
+Directory traversal
+Server-side request forgery
+ 
+
+Customers
+
+Organizations
+Testers
+Developers
+ 
+
+Company
+
+About
+PortSwigger News
+Careers
+Contact
+Legal
+Privacy Notice
+ 
+
+Insights
+
+Web Security Academy
+Blog
+Research
+The Daily Swig
+ 
+Follow us
+
+© 2021 PortSwigger Ltd.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Get the message: Organizations without vulnerability disclosure policies failing to address researchers’ security warnings | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/get-the-message-organizations-without-vulnerability-disclosure-policies-failing-to-address-researchers-security-warnings</link>
+            <guid>https://portswigger.net/daily-swig/get-the-message-organizations-without-vulnerability-disclosure-policies-failing-to-address-researchers-security-warnings</guid>
+            <pubDate>Mon, 12 Jul 2021 13:34:34 GMT</pubDate>
+            <content:encoded><![CDATA[Get the message: Organizations without vulnerability disclosure policies failing to address researchers’ security warnings
+Adam Bannister 03 June 2021 at 15:37 UTC
+Updated: 18 June 2021 at 13:16 UTC
+Bug Bounty Hacking News Vulnerabilities
+
+Ethical hackers frequently report security flaws outside of VDPs – often to no avail
+
+Up to a third of all security flaws reported to organizations with no vulnerability disclosure policy (VDP) are not being patched due to failings in the disclosure process, a new report suggests.
+
+Polled by Belgium-based bug bounty platform Intigriti, 12% of security researchers who reported vulnerabilities through alternative channels believed their submission was not successful in reaching security teams, while 19% were unsure about the outcome.
+
+The Ethical Hacker Insights Report 2021 reveals that 70% of ethical hackers have discovered a vulnerability in a system not covered by a VDP.
+
+
+
+
+DON’T FORGET TO READ Bug Bounty Radar // The latest bug bounty programs for June 2021
+
+
+
+
+And since 12% of those said they didn’t escalate or follow up on their initial report, vendors without VDPs are potentially unaware of up to 44% of zero-day vulnerabilities detected by bug hunters.
+
+“Investing in ethical hacking is investing in your company’s reputation,” said Intigriti CEO and founder Stijn Jans.
+
+“Running an ethical hacking program can save companies needless security headaches and money, and will empower them to operate online with renewed confidence.”
+
+Hit and miss
+
+Without having a VDP in place, 50% of researchers’ vulnerability reports are routed through customer service channels, 36% of which failed to reach the security team, according to Intigriti’s survey of more than 1,000 ethical hackers from 140 countries.
+
+“Some of the hackers indicated that their reports were closed as spam or were treated as phishing – customer service agents are not trained to handle vulnerability reports and will have a difficult time escalating them to the right person,” Inti De Ceukelaire, head of hackers at Intigriti, tells The Daily Swig.
+
+Another 15% attempted to guess the security team’s email address, while 14% sent their findings via social media.
+
+Perils of public disclosure
+
+While public disclosure is deemed to be the most successful method in terms of alerting a vendor’s security team to a security issue, this also potentially exposes their sensitive findings to malicious hackers.
+
+In addition, while just 6% of respondents opted for public disclosure, vulnerability reports of this nature still had a one-in-three (31%) chance of failing to reach the target organizations’ security teams.
+
+“Public disclosure has shown to be the most effective method to get noticed, but is far from ideal for the affected company and the safety of its users,” says De Ceukelaire. “Direct contacts, such as through LinkedIn or a dedicated security inbox, are the most successful, as they end up with the right person straight away.”
+
+
+
+
+Catch up on the latest bug bounty news
+
+
+
+
+The least successful medium was sending reports through third-party services like computer emergency response teams (CERTs) – 44% of these approaches failed to reach the appropriate team.
+
+“The less points of contact a vulnerability report needs to travel through, the better,” says De Ceukelaire. “Third party instances such as the CERT are overwhelmed with external vulnerability reports and may not have the business context to properly assess the severity of a report.
+
+“Reaching the right person or team may also be a challenge for them, especially for larger organizations - because some product teams will not take ownership or responsibility to forward vulnerability reports for other teams within the same organization.”
+
+Young and eager to learn
+
+The vast majority of ethical hackers – 95% – are male, as well as digital natives, with 51% aged between 18-24 years old and only 13% over the age of 34, according to Intigriti’s latest Ethical Hacker Insights Report.
+
+Most (80%) earn their primary income in IT roles such as penetration tester (43%), security analyst (27%), and software developer (6%). Nearly 20% of those polled had at least one of the CEH, OSCP, or OSWE infosec certifications.
+
+Money was only the second most popular motivation for ethical hacking – an important incentive for just 63% – with learning new skills the biggest single motivation, cited by 70%.
+
+Asked to pick the three most important variables for choosing targets, hackers most frequently chose a broad scope (68%), followed by ‘fresh’ scope (43%), and the promise of dealing with a responsive triage team (42%).
+
+Web applications were the most popular technology to probe, followed by mobile, networks, static code analysis, then phishing/social engineering.
+
+While hacking is generally seen as a solo endeavor, 91% of researchers said they had either collaborated with peers when bug hunting (30%) or would like to do so in the future (61%).
+
+Bug bonanza
+
+Intigriti also revealed that 71% of bug bounty programs receive a report of a ‘high’ or ‘critical’ severity bug within 48 hours of launch, and 37 valid bug reports within a week.
+
+One bug hunter told Intigriti: “I think my fastest critical vulnerability find was within 10 seconds – and that was for quite a well-known company that had already done a penetration test.”
+
+Inti De Ceukelaire is hosting a free webinar on June 22 to discuss the report.
+
+
+
+
+RECOMMENDED ‘Soft skills are the most under-researched area of the bug bounty industry’ – ‘Reconless’ YouTubers on filling a gap in infosec education
+
+Bug Bounty Hacking News Vulnerabilities Zero-day Research Network Security Database Security Cloud Security Belgium Europe Certification DevOps DevSecOps Secure Development Social Media Mobile Organizations Industry News Phishing Social Engineering
+
+Adam Bannister
+
+@Ad_Nauseum74
+
+Latest Posts
+Eight arrests made as Eurojust dismantles €2m phishing fraud
+Less.js flaw causes website to leak AWS secret keys
+Issues in plugin feature can leave users at risk
+China puts national security protection at the center of new data privacy law
+Broad and vague definition of sensitive information worries lawyers
+Related stories
+Eight arrests made as Eurojust dismantles €2m phishing fraud
+12 July 2021
+Less.js flaw causes website to leak AWS secret keys
+09 July 2021
+China puts national security protection at the center of new data privacy law
+09 July 2021
+Death to DOM XSS
+Google checks rise of complex threat with Trusted Types
+09 July 2021
+
+Burp Suite
+
+Web vulnerability scanner
+Burp Suite Editions
+Release Notes
+ 
+
+Vulnerabilities
+
+Cross-site scripting (XSS)
+SQL injection
+Cross-site request forgery
+XML external entity injection
+Directory traversal
+Server-side request forgery
+ 
+
+Customers
+
+Organizations
+Testers
+Developers
+ 
+
+Company
+
+About
+PortSwigger News
+Careers
+Contact
+Legal
+Privacy Notice
+ 
+
+Insights
+
+Web Security Academy
+Blog
+Research
+The Daily Swig
+ 
+Follow us
+
+© 2021 PortSwigger Ltd.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Eight arrests made as Eurojust dismantles €2 million e-commerce fraud operation | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/eight-arrests-made-as-eurojust-dismantles-2-million-e-commerce-fraud-operation</link>
+            <guid>https://portswigger.net/daily-swig/eight-arrests-made-as-eurojust-dismantles-2-million-e-commerce-fraud-operation</guid>
+            <pubDate>Mon, 12 Jul 2021 13:34:33 GMT</pubDate>
+            <content:encoded><![CDATA[Eight arrests made as Eurojust dismantles €2 million e-commerce fraud operation
+Adam Bannister 12 July 2021 at 12:29 UTC
+Updated: 12 July 2021 at 13:02 UTC
+Fraud Phishing Europe
+
+Phishing victims thought they were buying goods and services via Amazon, eBay, and Airbnb
+
+Romanian and Greek police have arrested eight members of an organized crime group that defrauded online shoppers of at least €2 million ($2.4 million).
+
+Authorities also seized €220,000 ($261,000) in cash, mobile phones, and travel documents during raids at 30 locations, in an operation coordinated by Eurojust, the EU agency that facilitates cross-border cooperation in criminal cases.
+
+The criminal network deployed phishing scams to dupe victims into paying for what they believed were goods and services via legitimate websites, including €50,000 ($59,000) cars via eBay, goods from Amazon, and accommodation through Airbnb.
+
+
+
+
+Read more of the latest cybercrime news and analysis
+
+
+
+
+Using forged identity documents, the gang set up at least 300 bank accounts in Hungary, Spain, Poland, Germany, and the Netherlands in which “to hide their profits”, according to a Eurojust press release.
+
+The scammers created fictitious advertisements, along with fake transport and payment companies whose names sounded similar to legitimate enterprises.
+
+Data theft
+
+As well as stealing cash, the social engineering attack infected victims’ devices with malware and captured their login details, credit card and bank account numbers, and other sensitive personal data.
+
+The ill-gotten data was shared among the criminal network, said Eurojust.
+
+The operation also involved the cooperation of Dutch and Spanish authorities.
+
+The arrests follow a further two arrests made last month in another Eurojust-backed operation related to the same criminal gang’s involvement in an online fraud targeting the Dutch housing market.
+
+Interpol ransomware warning
+
+News of the arrests landed on July 8 – the same day that Interpol concluded its annual conference focused on ‘National Central Bureaus’, which serve as a bridge between the organization and frontline police around the world.
+
+During the event, senior police officials from 167 Interpol member countries discussed the expansion of Interpol’s I-24/7 secure communications network to national police and border control agencies, as well as the burgeoning ransomware threat.
+
+“A global strategy in response to the threat of ransomware is critical – one where we successfully build trust, see effective exchange of data, and maximize rapid operational assistance to law enforcement agencies,” said Interpol secretary general Jürgen Stock in a press release.
+
+
+
+
+RELATED Operation Lyrebird: Cybercops nab Moroccan phish-and-carding kingpin
+
+Fraud Phishing Europe Social Engineering Cybercrime Cyber-attacks Email Security Hacking News Passwords E-Commerce Spain Poland Germany Netherlands Industry News Ransomware Finance Legal Amazon Malware Logistics Privacy
+
+Adam Bannister
+
+@Ad_Nauseum74
+
+Latest Posts
+Less.js flaw causes website to leak AWS secret keys
+Issues in plugin feature can leave users at risk
+China puts national security protection at the center of new data privacy law
+Broad and vague definition of sensitive information worries lawyers
+Death to DOM XSS
+Google checks rise of complex threat with Trusted Types
+Related stories
+Eight arrests made as Eurojust dismantles €2m phishing fraud
+12 July 2021
+Less.js flaw causes website to leak AWS secret keys
+09 July 2021
+China puts national security protection at the center of new data privacy law
+09 July 2021
+Death to DOM XSS
+Google checks rise of complex threat with Trusted Types
+09 July 2021
+
+Burp Suite
+
+Web vulnerability scanner
+Burp Suite Editions
+Release Notes
+ 
+
+Vulnerabilities
+
+Cross-site scripting (XSS)
+SQL injection
+Cross-site request forgery
+XML external entity injection
+Directory traversal
+Server-side request forgery
+ 
+
+Customers
+
+Organizations
+Testers
+Developers
+ 
+
+Company
+
+About
+PortSwigger News
+Careers
+Contact
+Legal
+Privacy Notice
+ 
+
+Insights
+
+Web Security Academy
+Blog
+Research
+The Daily Swig
+ 
+Follow us
+
+© 2021 PortSwigger Ltd.]]></content:encoded>
+        </item>
+    </channel>
+</rss>

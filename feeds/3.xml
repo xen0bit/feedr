@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Exploit DB</title>
+        <link>https://www.exploit-db.com/</link>
+        <description>Exploit DB</description>
+        <lastBuildDate>Mon, 12 Jul 2021 15:18:09 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>awesome</generator>
+        <language>en</language>
+        <image>
+            <title>Exploit DB</title>
+            <url>https://remyhax.xyz/image/profile.jpg</url>
+            <link>https://www.exploit-db.com/</link>
+        </image>
+        <copyright>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</copyright>
+    </channel>
+</rss>

@@ -1,0 +1,27 @@
+{
+  "name": "feedr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "initialize": "node initialize.js",
+    "diff": "node diff.js",
+    "crawl": "node crawl.js",
+    "feed": "node genfeed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xen0bit/feedr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xen0bit/feedr/issues"
+  },
+  "homepage": "https://github.com/xen0bit/feedr#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.4.1",
+    "feed": "^4.2.2",
+    "puppeteer": "^10.1.0"
+  }
+}
