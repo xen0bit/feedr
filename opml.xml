@@ -1,9 +1,9 @@
 <opml version="2.0">
 	<body>
 		<outline text="Subscriptions" title="Subscriptions">
-			<outline xmlUrl='http://192.168.8.203:8080/feeds/1.xml' />
-			<outline xmlUrl='http://192.168.8.203:8080/feeds/2.xml' />
-			<outline xmlUrl='http://192.168.8.203:8080/feeds/3.xml' />
+			<outline xmlUrl='https://remyhax.xyz/feedr/1.xml' />
+			<outline xmlUrl='https://remyhax.xyz/feedr/2.xml' />
+			<outline xmlUrl='https://remyhax.xyz/feedr/3.xml' />
 
 		</outline>
 	</body>

@@ -4,7 +4,7 @@
         <title>Portswigger</title>
         <link>https://portswigger.net/daily-swig</link>
         <description>Portswigger</description>
-        <lastBuildDate>Mon, 12 Jul 2021 15:18:09 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 14 Jul 2021 20:05:05 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>awesome</generator>
         <language>en</language>
@@ -15,74 +15,229 @@
         </image>
         <copyright>DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE</copyright>
         <item>
-            <title><![CDATA[Microsoft paid out $14m in bug bounty rewards in past 12 months – report | The Daily Swig]]></title>
-            <link>https://portswigger.net/daily-swig/microsoft-paid-out-14m-in-bug-bounty-rewards-in-past-12-months-report</link>
-            <guid>https://portswigger.net/daily-swig/microsoft-paid-out-14m-in-bug-bounty-rewards-in-past-12-months-report</guid>
-            <pubDate>Mon, 12 Jul 2021 15:17:46 GMT</pubDate>
-            <content:encoded><![CDATA[Microsoft paid out $14m in bug bounty rewards in past 12 months – report
-Jessica Haworth 12 July 2021 at 14:00 UTC
-Updated: 12 July 2021 at 14:02 UTC
-Microsoft Bug Bounty Vulnerabilities
+            <title><![CDATA[SolarWinds issues fix for RCE vulnerability in Serv-U products amid ‘targeted’ attacks | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/solarwinds-issues-fix-for-rce-vulnerability-in-serv-u-products-amid-targeted-attacks</link>
+            <guid>https://portswigger.net/daily-swig/solarwinds-issues-fix-for-rce-vulnerability-in-serv-u-products-amid-targeted-attacks</guid>
+            <pubDate>Wed, 14 Jul 2021 19:57:39 GMT</pubDate>
+            <content:encoded><![CDATA[SolarWinds issues fix for RCE vulnerability in Serv-U products amid ‘targeted’ attacks
+Adam Bannister 13 July 2021 at 12:24 UTC
+Updated: 13 July 2021 at 14:08 UTC
+Cyber-attacks RCE Enterprise
 
-Security researchers received an average of $10k per report
-
-
-
-
-Microsoft has awarded $13.6 million to security researchers under it bug bounty program in the past 12 months alone.
-
-The tech giant, which runs a number of technology-specific programs under the umbrella of its coordinated vulnerability disclosure (CVD) program, revealed the figure in a blog post.
-
-Its single highest reward was $200k, which was handed out for the discovery of vulnerabilities in its Hyper V program.
-
-Microsoft also revealed that in the past year, security researchers netted an average of $10k per report.
-
-Payouts
-
-The rewards were given to more than 340 security researchers across 58 countries, said Microsoft, adding that 1,200 of the reports it received were eligible for a payout.
-
-Microsoft said the sheer volume of reports reflects the “talent and creativity of the global security research community and their invaluable partnership in addressing the challenges of a constantly changing security environment”.
-
-The company also said that it is “constantly evaluating” the threat landscape in order to makes changes to the program and respond accordingly.
+Enterprise IT software vendor unsure of scope of impact
 
 
 
 
-Read more of the latest bug bounty news
+UPDATED SolarWinds has patched a remote code execution (RCE) vulnerability in its Serv-U file transfer products after Microsoft observed exploitation against “a limited, targeted set of customers” by “a single threat actor”.
+
+The remote memory escape flaw (CVE-2021-35211) affects both the Serv-U Managed File Transfer Server and Serv-U Secured File Transfer Protocol, according to a security advisory issued by SolarWinds.
+
+“A threat actor who successfully exploited this vulnerability could run arbitrary code with privileges,” said SolarWinds. “An attacker could then install programs; view, change, or delete data; or run programs on the affected system.”
 
 
-“This year, we introduced new challenges and scenarios to award research focused on the highest impact to customer security,” said Microsoft.
-
-“These focus areas helped us not only discover and fix risks to customer privacy and security, but also offer researchers top awards for their high-impact work.”
 
 
+Catch up on the latest cyber-attack news and analysis
 
 
-YOU MAY LIKE Microsoft Edge Translator contained uXSS flaw exploitable ‘on any web page’
 
-Microsoft Bug Bounty Vulnerabilities Windows Industry News Secure Development Organizations Hacking News
+
+Having been alerted to the flaw and hostile exploitation by Microsoft, SolarWinds said it “mobilized to address it quickly”, issuing a hotfix on July 9.
+
+The enterprise IT software vendor said it doesn’t yet “have an estimate of how many customers may be directly affected by the vulnerability”, or the identity of any potentially affected customers.
+
+SolarWinds said the flaw “is completely unrelated to the Sunburst supply chain attack” that unfolded at the tail end of 2020, in which nation-state attackers compromised SolarWinds clients such as Microsoft, FireEye, and US government agencies via vulnerabilities in SolarWinds’ Orion software.
+
+A SolarWinds spokesperson told The Daily Swig: “Microsoft has detected a limited amount of activity associated with this issue. Regardless, we quickly released a patch to help ensure the protection of customer environments.
+
+“It's important to note that this is a software vulnerability like those commonly seen in all software vendors. It is not a new cyberattack.”
+
+Indicators of compromise
+
+The vulnerability exists in all Serv-U versions up to and including 15.2.3 HF1, and has been addressed in Serv-U 15.2.3 HF2.
+
+“We recommend all customers using Serv-U install this fix immediately for the protection of your environment,” said SolarWinds.
+
+
+
+
+RECOMMENDED Eight arrests made as Eurojust dismantles €2 million e-commerce fraud operation
+
+
+
+
+SolarWinds has confirmed that no other SolarWinds or N-able (formerly SolarWinds MSP) products are affected by the flaw.
+
+The company has warned Serv-U customers that the throwing of exceptions within their environment could be a sign of compromise – although there are other potential causes – because exploitation takes the form of Return Oriented Programming (ROP) attacks.
+
+Another potential indicator of compromise is “potentially suspicious connections via SSH”.
+
+Customers are safe from attacks exploiting the vulnerability when SSH is disabled, added SolarWinds.
+
+The company also said that “additional details of the vulnerability will be published after giving customers sufficient time to upgrade for the protection of their environments”.
+
+
+
+
+This article was updated on July 13 with the addition of comments from SolarWinds.
+
+
+
+
+DON’T FORGET TO READ Research exposes vulnerabilities in IP camera firmware used by multiple vendors
+
+Cyber-attacks RCE Enterprise Microsoft Vulnerabilities Cybercrime Hacking News Network Security Zero-day Organizations
+
+Adam Bannister
+
+@Ad_Nauseum74
+
+Latest Posts
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+Open source web container now patched against six-year-old bug
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+DevSecAI
+GitHub Copilot prone to writing security flaws
+Related stories
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+14 July 2021
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+14 July 2021
+DevSecAI
+GitHub Copilot prone to writing security flaws
+14 July 2021
+Overwritten
+Vulnerabilities in open source text editor Etherpad could lead to takeover
+14 July 2021
+
+Burp Suite
+
+Web vulnerability scanner
+Burp Suite Editions
+Release Notes
+ 
+
+Vulnerabilities
+
+Cross-site scripting (XSS)
+SQL injection
+Cross-site request forgery
+XML external entity injection
+Directory traversal
+Server-side request forgery
+ 
+
+Customers
+
+Organizations
+Testers
+Developers
+ 
+
+Company
+
+About
+PortSwigger News
+Careers
+Contact
+Legal
+Privacy Notice
+ 
+
+Insights
+
+Web Security Academy
+Blog
+Research
+The Daily Swig
+ 
+Follow us
+
+© 2021 PortSwigger Ltd.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Firefox becomes latest browser to support Fetch Metadata request headers | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/firefox-becomes-latest-browser-to-support-fetch-metadata-request-headers</link>
+            <guid>https://portswigger.net/daily-swig/firefox-becomes-latest-browser-to-support-fetch-metadata-request-headers</guid>
+            <pubDate>Wed, 14 Jul 2021 19:57:37 GMT</pubDate>
+            <content:encoded><![CDATA[Firefox becomes latest browser to support Fetch Metadata request headers
+Jessica Haworth 13 July 2021 at 13:55 UTC
+Updated: 13 July 2021 at 13:59 UTC
+Browsers firefox Secure Development
+
+Extra layer of security helps protect against CSRF and XS-Leak attacks
+
+Firefox now supports Fetch Metadata request headers, Mozilla has announced, further protecting users from a number of high-impact web attacks.
+
+The new version of the popular browser, which was made available to all users today, is the latest to include the Google-developed privacy feature.
+
+In total, Firefox 90 will feature four different headers – Dest, Mode, Site, and User – which together allow web applications to protect users against various cross-origin threats, including cross-site request forgery (CSRF), cross-site leaks (XS-Leaks), and Spectre-style side-channel attacks.
+
+A blog post released today (July 13) contains more information about Mozilla’s implementation of the technology.
+
+Timeline
+
+Fetch Metadata request headers were introduced in Chrome 76, which was released in July 2019.
+
+
+
+
+INSIGHT What is Fetch Metadata? How to protect your web resources from information-stealing attacks
+
+
+
+
+The headers provide web servers with extra security information that can help determine whether to block or allow requests.
+
+They also allow a user to deploy a Resource Isolation Policy, a strong defense-in-depth mechanism.
+
+This not only helps protect users from the potentially harmful attacks listed above, but can also help web servers to differentiate between cross-site and same-origin requests.
+
+
+
+
+Read more of the latest browser security news
+
+
+
+
+Fetch Metadata request headers are already available for Edge and Opera, which are also based on the open source Chromium framework.
+
+To find out more about how Fetch Metadata request headers work, check out this interview with Lukas Weichselbaum, staff information security engineer at Google, who spoke to The Daily Swig about the technology.
+
+
+
+
+DON’T FORGET TO READ Google checks rise of DOM XSS with Trusted Types
+
+Browsers firefox Secure Development Chrome Mozilla Google DevSecOps CSRF Vulnerabilities Industry News Edge XS-Leak Privacy
 
 Jessica Haworth
 
 @JesscaHaworth
 
 Latest Posts
-Instant replay
-Research exposes vulnerabilities in IP camera firmware used by multiple vendors
-Eight arrests made as Eurojust dismantles €2m phishing fraud
-Less.js flaw causes website to leak AWS secret keys
-Issues in plugin feature can leave users at risk
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+Open source web container now patched against six-year-old bug
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+DevSecAI
+GitHub Copilot prone to writing security flaws
 Related stories
-Instant replay
-Research exposes vulnerabilities in IP camera firmware used by multiple vendors
-12 July 2021
-Bug bounty report
-Microsoft paid out $14m in rewards in the past 12 months
-12 July 2021
-Eight arrests made as Eurojust dismantles €2m phishing fraud
-12 July 2021
-Less.js flaw causes website to leak AWS secret keys
-09 July 2021
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+14 July 2021
+DevSecAI
+GitHub Copilot prone to writing security flaws
+14 July 2021
+Overwritten
+Vulnerabilities in open source text editor Etherpad could lead to takeover
+14 July 2021
+Roll the dice
+Encryption issues account for minority of flaws in encryption libraries
+13 July 2021
 
 Burp Suite
 
@@ -130,80 +285,87 @@ Follow us
 © 2021 PortSwigger Ltd.]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Research exposes vulnerabilities in IP camera firmware used by multiple vendors | The Daily Swig]]></title>
-            <link>https://portswigger.net/daily-swig/research-exposes-vulnerabilities-in-ip-camera-firmware-used-by-multiple-vendors</link>
-            <guid>https://portswigger.net/daily-swig/research-exposes-vulnerabilities-in-ip-camera-firmware-used-by-multiple-vendors</guid>
-            <pubDate>Mon, 12 Jul 2021 15:17:45 GMT</pubDate>
-            <content:encoded><![CDATA[Research exposes vulnerabilities in IP camera firmware used by multiple vendors
-John Leyden 12 July 2021 at 15:14 UTC
-IoT Network Security Vulnerabilities
+            <title><![CDATA[Encryption issues account for minority of flaws in encryption libraries – research | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/encryption-issues-account-for-minority-of-flaws-in-encryption-libraries-research</link>
+            <guid>https://portswigger.net/daily-swig/encryption-issues-account-for-minority-of-flaws-in-encryption-libraries-research</guid>
+            <pubDate>Wed, 14 Jul 2021 19:57:36 GMT</pubDate>
+            <content:encoded><![CDATA[Encryption issues account for minority of flaws in encryption libraries – research
+John Leyden 13 July 2021 at 16:15 UTC
+Updated: 14 July 2021 at 16:21 UTC
+Encryption Network Security Vulnerabilities
 
-Flawed UDP code bundled in CCTV devices from Geutebrück, VCA, and Sprinx Technologies
+‘Complexity is an even worse enemy of security in cryptographic software’
 
-Security researchers at Randorisec have uncovered numerous severe vulnerabilities in IP camera firmware from UDP Technology.
+An analysis of cryptographic libraries and the vulnerabilities affecting them has concluded that memory handling issues give rise to more vulnerabilities than encryption implementation errors.
 
-UDP firmware is bundled in cameras from a variety of vendors including Geutebrück, VCA, Sprinx Technologies, and others.
+The study by academics at Massachusetts Institute of Technology (MIT) involved an examination of eight widely used cryptographic libraries using a combination of sources, including data from the National Vulnerability Database, individual project repositories, and mailing lists, among other sources.
 
-French security consultancy Randorisec said it had previously discovered several critical vulnerabilities in the firmware, ranging from authentication bypass to remote code execution (RCE).
+Vulnerabilities in any of these widely used crypto libraries puts portions of web traffic and e-commerce transactions in danger, but the study concluded that coding rigour in the development of encryption technologies compares poorly with comparably complex mainstream software.
 
-Based on these earlier shortcomings, Randorisec took another pass at UDP technology, discovering a further 11 authenticated remote code execution (RCE) and a complete authentication bypass vulnerabilities in the process.
+For example, a flaw in the widely used OpenSSL library in 2014 gave rise to the infamous Heartbleed vulnerability.
 
-Instant replay
+Roll the dice
 
-In a detailed technical blog post, Randorisec researchers offer a step-by-step explanation of how they discovered command injection and stack-based buffer overflow flaws.
+The study, entitled ‘You Really Shouldn’t Roll Your Own Crypto: An Empirical Study of Vulnerabilities in Cryptographic Libraries’, by researchers Jenny Blessing, Michael Specter, and Daniel Weitzner, found “evidence of a strong correlation between the complexity of these libraries and their (in)security, empirically demonstrating the potential risks of bloated cryptographic codebases.”
 
-Further progress along the journey allowed them to uncover the authentication bypass vulnerabilities and develop proof-of-concept RCE exploits.
-
-
-
-
-Catch up on the latest IoT security research news
+Only 27.2% of vulnerabilities in cryptographic libraries are cryptographic issues compared to 37.2% of vulnerabilities that are rooted in memory safety issues.
 
 
 
 
-Randorisec disclosed the vulnerabilities in February and, following an extended disclosure engagement with Geutebrück, finally resolved with the release of firmware that corrected the vulnerabilities earlier this month.
-
-This cleared the way for Randorisec to publish its blog post documenting the vulnerabilities.
-
-These various flaws are tracked as CVE-2021-33543 through to CVE-2021-33554.
-
-Got root?
-
-Davy Douhine, a security researcher at Randorisec, told The Daily Swig that exploiting any of the vulnerabilities opened up the door to all manner of mischief.
-
-“Combining this authentication bypass [with] any of the RCE [vulnerabilities] gave us a root shell,” Douhine explained.
-
-“From there you can do whatever you want – the camera is ‘jailbroken’. [An attacker could] stop the video stream, change it, use it as a relay to the connected network.”
+Catch up with the latest encryption-related news and analysis
 
 
 
 
-RELATED Firmware vulnerabilities in Netgear routers created security risk
+Non-cryptographic source code generally has a lower density of CVEs introduced compared to cryptographic libraries, the researchers found.
 
-IoT Network Security Vulnerabilities Hacking News Research RCE France Europe Hardware China Asia Hacking Techniques Privacy Supply Chain Attacks Authentication
+“Our findings suggest that cryptographic source code is indeed more brittle and prone to producing security bugs than a comparable amount of source code in a web browser or operating system,” the researchers conclude.
+
+“The empirical data leads us to conclude that complexity is an even worse enemy of security in cryptographic software than in non-cryptographic software.”
+
+Speaking the same language
+
+The researchers call for a systems-based approach to cryptographic software, as well as emphasizing the dangers of “rolling your own crypto” – meaning that software developers should rely on established libraries and tools instead of developing their own.
+
+The paper provoked a debate on the merits of different coding languages for cryptographic libraires on Twitter, in which a move away from C and C++ towards memory safe programming languages such Rust was advocated.
+
+Open source isn’t really the answer because even in open source code, such as OpenSSL, errors like Heartbleed can go undetected for years.
+
+Professor Alan Woodward, a computer scientist at the University of Surrey, told The Daily Swig: “Languages such as C/C++ are complex to write in and even though modern compilers and tool sets provide some safeguards against memory issues, they continue.
+
+“As an empirical study it’s quite useful as a means of showing anyone that wishes to roll their own that they should get a real expert in both cryptography and the languages they are using to check to ensure they haven’t made a choice or used a construction that will render the cryptography insecure.”
+
+
+
+
+YOU MAY ALSO LIKE Microsoft paid out $14m in bug bounty rewards in the last 12 months - report
+
+Encryption Network Security Vulnerabilities Hacking News Open Source Software OSINT E-Commerce Database Security Cloud Security Internet Infrastructure Secure Development DevOps DevSecOps Industry News Research java JavaScript Python PHP Node.js Authentication IoT
 
 John Leyden
 
 @jleyden
 
 Latest Posts
-Bug bounty report
-Microsoft paid out $14m in rewards in the past 12 months
-Eight arrests made as Eurojust dismantles €2m phishing fraud
-Less.js flaw causes website to leak AWS secret keys
-Issues in plugin feature can leave users at risk
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+Open source web container now patched against six-year-old bug
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+DevSecAI
+GitHub Copilot prone to writing security flaws
 Related stories
-Instant replay
-Research exposes vulnerabilities in IP camera firmware used by multiple vendors
-12 July 2021
-Bug bounty report
-Microsoft paid out $14m in rewards in the past 12 months
-12 July 2021
-Eight arrests made as Eurojust dismantles €2m phishing fraud
-12 July 2021
-Less.js flaw causes website to leak AWS secret keys
-09 July 2021
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+14 July 2021
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+14 July 2021
+DevSecAI
+GitHub Copilot prone to writing security flaws
+14 July 2021
+Overwritten
+Vulnerabilities in open source text editor Etherpad could lead to takeover
+14 July 2021
 
 Burp Suite
 
@@ -251,116 +413,98 @@ Follow us
 © 2021 PortSwigger Ltd.]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Get the message: Organizations without vulnerability disclosure policies failing to address researchers’ security warnings | The Daily Swig]]></title>
-            <link>https://portswigger.net/daily-swig/get-the-message-organizations-without-vulnerability-disclosure-policies-failing-to-address-researchers-security-warnings</link>
-            <guid>https://portswigger.net/daily-swig/get-the-message-organizations-without-vulnerability-disclosure-policies-failing-to-address-researchers-security-warnings</guid>
-            <pubDate>Mon, 12 Jul 2021 13:34:34 GMT</pubDate>
-            <content:encoded><![CDATA[Get the message: Organizations without vulnerability disclosure policies failing to address researchers’ security warnings
-Adam Bannister 03 June 2021 at 15:37 UTC
-Updated: 18 June 2021 at 13:16 UTC
-Bug Bounty Hacking News Vulnerabilities
+            <title><![CDATA[Critical vulnerabilities in open source text editor Etherpad could lead to remote takeover | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/critical-vulnerabilities-in-open-source-text-editor-etherpad-could-lead-to-remote-takeover</link>
+            <guid>https://portswigger.net/daily-swig/critical-vulnerabilities-in-open-source-text-editor-etherpad-could-lead-to-remote-takeover</guid>
+            <pubDate>Wed, 14 Jul 2021 19:57:35 GMT</pubDate>
+            <content:encoded><![CDATA[Critical vulnerabilities in open source text editor Etherpad could lead to remote takeover
+Jessica Haworth 14 July 2021 at 09:38 UTC
+Updated: 14 July 2021 at 10:01 UTC
+Vulnerabilities Open Source Software XSS
 
-Ethical hackers frequently report security flaws outside of VDPs – often to no avail
-
-Up to a third of all security flaws reported to organizations with no vulnerability disclosure policy (VDP) are not being patched due to failings in the disclosure process, a new report suggests.
-
-Polled by Belgium-based bug bounty platform Intigriti, 12% of security researchers who reported vulnerabilities through alternative channels believed their submission was not successful in reaching security teams, while 19% were unsure about the outcome.
-
-The Ethical Hacker Insights Report 2021 reveals that 70% of ethical hackers have discovered a vulnerability in a system not covered by a VDP.
+XSS bug in open source program has now been patched, though second flaw remains
 
 
 
 
-DON’T FORGET TO READ Bug Bounty Radar // The latest bug bounty programs for June 2021
+Security vulnerabilities in online text editor Etherpad could allow attackers to remotely compromise a victim’s server and steal sensitive information, new research reveals.
+
+A cross-site scripting flaw (XSS) enabled attackers to create a malicious shared document, or ‘pad’, that executes attacker-controlled code in the victim’s browser, allowing assailants to read, create, or modify data.
+
+A second vulnerability, an argument injection bug, allowed attackers with administrative access to execute arbitrary code on the server by installing plugins from a URL that’s under their control.
 
 
 
 
-And since 12% of those said they didn’t escalate or follow up on their initial report, vendors without VDPs are potentially unaware of up to 44% of zero-day vulnerabilities detected by bug hunters.
+Read more of the latest news about security vulnerabilities
 
-“Investing in ethical hacking is investing in your company’s reputation,” said Intigriti CEO and founder Stijn Jans.
 
-“Running an ethical hacking program can save companies needless security headaches and money, and will empower them to operate online with renewed confidence.”
+Both vulnerabilities (CVE-2021-34817 and CVE-2021-34816), which were classed as ‘critical’, could be combined by attackers to compromise a server remotely.
 
-Hit and miss
+The XSS vulnerability has been fixed in Etherpad version 1.8.14. The argument injection vulnerability is still apparently unpatched, but the researchers who discovered the flaw said it is “significantly harder” to exploit on its own.
 
-Without having a VDP in place, 50% of researchers’ vulnerability reports are routed through customer service channels, 36% of which failed to reach the security team, according to Intigriti’s survey of more than 1,000 ethical hackers from 140 countries.
+Double trouble?
 
-“Some of the hackers indicated that their reports were closed as spam or were treated as phishing – customer service agents are not trained to handle vulnerability reports and will have a difficult time escalating them to the right person,” Inti De Ceukelaire, head of hackers at Intigriti, tells The Daily Swig.
+The security issues were discovered by Paul Gerste, vulnerability researcher at SonarSource, a Switzerland-based developer of DevSecOps tools.
 
-Another 15% attempted to guess the security team’s email address, while 14% sent their findings via social media.
+A blog post released last night (July 13) states that Etherpad has more 250 plugins available and features a version history as well as a chat functionality.
 
-Perils of public disclosure
+It is particularly popular within the open source community and has been bookmarked more than 10,000 times by users.
 
-While public disclosure is deemed to be the most successful method in terms of alerting a vendor’s security team to a security issue, this also potentially exposes their sensitive findings to malicious hackers.
-
-In addition, while just 6% of respondents opted for public disclosure, vulnerability reports of this nature still had a one-in-three (31%) chance of failing to reach the target organizations’ security teams.
-
-“Public disclosure has shown to be the most effective method to get noticed, but is far from ideal for the affected company and the safety of its users,” says De Ceukelaire. “Direct contacts, such as through LinkedIn or a dedicated security inbox, are the most successful, as they end up with the right person straight away.”
+Gerste told The Daily Swig that while the vulnerabilities are serious when chained, there are limitations to their exploitation.
 
 
 
 
-Catch up on the latest bug bounty news
+DON’T MISS WAF bypass: ‘Severe’ OWASP ModSecurity Core Rule Set bug was present for several years
 
 
+“Instances with default configuration are vulnerable,” Gerste said. “The attacker needs to be able to import a pad, so if the Etherpad instance is publicly accessible and pad creation is not restricted, then it is vulnerable.”
+
+He added: “Attackers that already have access to a pad could elevate their privileges by targeting other users.”
+
+Regarding the argument injection vulnerability, this can only be exploited if an admin account exists, which is not the case in a default configuration.
+
+Therefore, an attacker can abuse the vulnerability if they compromise an administrator’s account – which can be achieved either via exploitation of the XSS vulnerability “or by other means”.
+
+One patched, one to go
+
+Gerste said that the maintainers of the project were quick to respond to his report and “took the matter seriously”, although they have only fixed one of the issues so far.
+
+“The fix for the XSS vulnerability was patched two days later,” he explained.
+
+“The argument injection was not easily fixable because of the way Etherpad’s plugin system works.
+
+“Since people can publish plugins via NPM, attackers could always find a way to introduce malicious code, so admins should always be careful which plugins they install.”
 
 
-The least successful medium was sending reports through third-party services like computer emergency response teams (CERTs) – 44% of these approaches failed to reach the appropriate team.
+YOU MAY ALSO LIKE Firefox becomes latest browser to support Fetch Metadata request headers
 
-“The less points of contact a vulnerability report needs to travel through, the better,” says De Ceukelaire. “Third party instances such as the CERT are overwhelmed with external vulnerability reports and may not have the business context to properly assess the severity of a report.
+Vulnerabilities Open Source Software XSS Secure Development DevOps DevSecOps GitHub Industry News Research Switzerland Europe Data Breach Data Leak JavaScript Hacking News Zero-day Privacy
 
-“Reaching the right person or team may also be a challenge for them, especially for larger organizations - because some product teams will not take ownership or responsibility to forward vulnerability reports for other teams within the same organization.”
+Jessica Haworth
 
-Young and eager to learn
-
-The vast majority of ethical hackers – 95% – are male, as well as digital natives, with 51% aged between 18-24 years old and only 13% over the age of 34, according to Intigriti’s latest Ethical Hacker Insights Report.
-
-Most (80%) earn their primary income in IT roles such as penetration tester (43%), security analyst (27%), and software developer (6%). Nearly 20% of those polled had at least one of the CEH, OSCP, or OSWE infosec certifications.
-
-Money was only the second most popular motivation for ethical hacking – an important incentive for just 63% – with learning new skills the biggest single motivation, cited by 70%.
-
-Asked to pick the three most important variables for choosing targets, hackers most frequently chose a broad scope (68%), followed by ‘fresh’ scope (43%), and the promise of dealing with a responsive triage team (42%).
-
-Web applications were the most popular technology to probe, followed by mobile, networks, static code analysis, then phishing/social engineering.
-
-While hacking is generally seen as a solo endeavor, 91% of researchers said they had either collaborated with peers when bug hunting (30%) or would like to do so in the future (61%).
-
-Bug bonanza
-
-Intigriti also revealed that 71% of bug bounty programs receive a report of a ‘high’ or ‘critical’ severity bug within 48 hours of launch, and 37 valid bug reports within a week.
-
-One bug hunter told Intigriti: “I think my fastest critical vulnerability find was within 10 seconds – and that was for quite a well-known company that had already done a penetration test.”
-
-Inti De Ceukelaire is hosting a free webinar on June 22 to discuss the report.
-
-
-
-
-RECOMMENDED ‘Soft skills are the most under-researched area of the bug bounty industry’ – ‘Reconless’ YouTubers on filling a gap in infosec education
-
-Bug Bounty Hacking News Vulnerabilities Zero-day Research Network Security Database Security Cloud Security Belgium Europe Certification DevOps DevSecOps Secure Development Social Media Mobile Organizations Industry News Phishing Social Engineering
-
-Adam Bannister
-
-@Ad_Nauseum74
+@JesscaHaworth
 
 Latest Posts
-Eight arrests made as Eurojust dismantles €2m phishing fraud
-Less.js flaw causes website to leak AWS secret keys
-Issues in plugin feature can leave users at risk
-China puts national security protection at the center of new data privacy law
-Broad and vague definition of sensitive information worries lawyers
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+Open source web container now patched against six-year-old bug
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+DevSecAI
+GitHub Copilot prone to writing security flaws
 Related stories
-Eight arrests made as Eurojust dismantles €2m phishing fraud
-12 July 2021
-Less.js flaw causes website to leak AWS secret keys
-09 July 2021
-China puts national security protection at the center of new data privacy law
-09 July 2021
-Death to DOM XSS
-Google checks rise of complex threat with Trusted Types
-09 July 2021
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+14 July 2021
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+14 July 2021
+DevSecAI
+GitHub Copilot prone to writing security flaws
+14 July 2021
+Overwritten
+Vulnerabilities in open source text editor Etherpad could lead to takeover
+14 July 2021
 
 Burp Suite
 
@@ -408,81 +552,430 @@ Follow us
 © 2021 PortSwigger Ltd.]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Eight arrests made as Eurojust dismantles €2 million e-commerce fraud operation | The Daily Swig]]></title>
-            <link>https://portswigger.net/daily-swig/eight-arrests-made-as-eurojust-dismantles-2-million-e-commerce-fraud-operation</link>
-            <guid>https://portswigger.net/daily-swig/eight-arrests-made-as-eurojust-dismantles-2-million-e-commerce-fraud-operation</guid>
-            <pubDate>Mon, 12 Jul 2021 13:34:33 GMT</pubDate>
-            <content:encoded><![CDATA[Eight arrests made as Eurojust dismantles €2 million e-commerce fraud operation
-Adam Bannister 12 July 2021 at 12:29 UTC
-Updated: 12 July 2021 at 13:02 UTC
-Fraud Phishing Europe
+            <title><![CDATA[DevSecAI: GitHub Copilot prone to writing security flaws | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/devsecai-github-copilot-prone-to-writing-security-flaws</link>
+            <guid>https://portswigger.net/daily-swig/devsecai-github-copilot-prone-to-writing-security-flaws</guid>
+            <pubDate>Wed, 14 Jul 2021 19:57:34 GMT</pubDate>
+            <content:encoded><![CDATA[DevSecAI: GitHub Copilot prone to writing security flaws
+Adam Bannister 14 July 2021 at 13:49 UTC
+Updated: 14 July 2021 at 14:12 UTC
+AI DevSecOps Research
 
-Phishing victims thought they were buying goods and services via Amazon, eBay, and Airbnb
+AI pair programmer should be supervised like a toddler, says researcher
 
-Romanian and Greek police have arrested eight members of an organized crime group that defrauded online shoppers of at least €2 million ($2.4 million).
+“How risky is it to allow an AI to write some, or all of your code?”
 
-Authorities also seized €220,000 ($261,000) in cash, mobile phones, and travel documents during raids at 30 locations, in an operation coordinated by Eurojust, the EU agency that facilitates cross-border cooperation in criminal cases.
+Far too risky without rigorous oversight, concludes security researcher ‘0xabad1dea’ after documenting a trio of security vulnerabilities generated by AI pair programmer GitHub Copilot during a risk assessment.
 
-The criminal network deployed phishing scams to dupe victims into paying for what they believed were goods and services via legitimate websites, including €50,000 ($59,000) cars via eBay, goods from Amazon, and accommodation through Airbnb.
+GitHub Copilot is designed to accelerate software development by suggesting entire lines and functions, adapting to developers’ coding style as it does so.
 
+Trained on billions of lines of code publicly available on GitHub, the machine learning tool is currently in a trial phase and available for testing as a Visual Studio Code extension.
 
+‘Reasonable at first glance’
 
+0xabad1dea says Copilot sometimes generates code that is “so obviously, trivially wrong that no professional programmer could think otherwise”.
 
-Read more of the latest cybercrime news and analysis
+More alarmingly still, it also suggests “bad code that looks reasonable at first glance, something that might slip by a programmer in a hurry, or seem correct to a less experienced coder”.
 
-
-
-
-Using forged identity documents, the gang set up at least 300 bank accounts in Hungary, Spain, Poland, Germany, and the Netherlands in which “to hide their profits”, according to a Eurojust press release.
-
-The scammers created fictitious advertisements, along with fake transport and payment companies whose names sounded similar to legitimate enterprises.
-
-Data theft
-
-As well as stealing cash, the social engineering attack infected victims’ devices with malware and captured their login details, credit card and bank account numbers, and other sensitive personal data.
-
-The ill-gotten data was shared among the criminal network, said Eurojust.
-
-The operation also involved the cooperation of Dutch and Spanish authorities.
-
-The arrests follow a further two arrests made last month in another Eurojust-backed operation related to the same criminal gang’s involvement in an online fraud targeting the Dutch housing market.
-
-Interpol ransomware warning
-
-News of the arrests landed on July 8 – the same day that Interpol concluded its annual conference focused on ‘National Central Bureaus’, which serve as a bridge between the organization and frontline police around the world.
-
-During the event, senior police officials from 167 Interpol member countries discussed the expansion of Interpol’s I-24/7 secure communications network to national police and border control agencies, as well as the burgeoning ransomware threat.
-
-“A global strategy in response to the threat of ransomware is critical – one where we successfully build trust, see effective exchange of data, and maximize rapid operational assistance to law enforcement agencies,” said Interpol secretary general Jürgen Stock in a press release.
+GitHub admits that “the code it suggests may not always work, or even make sense”, but adds that “it’s getting smarter all the time”.
 
 
 
 
-RELATED Operation Lyrebird: Cybercops nab Moroccan phish-and-carding kingpin
+RECOMMENDED Encryption issues account for minority of flaws in encryption libraries – research
 
-Fraud Phishing Europe Social Engineering Cybercrime Cyber-attacks Email Security Hacking News Passwords E-Commerce Spain Poland Germany Netherlands Industry News Ransomware Finance Legal Amazon Malware Logistics Privacy
+
+
+
+Central to these improvements will be ongoing optimization of a sliding ‘temperature’ scale between conservatism (mimicking the most common inputs) and originality, which makes output “less structured” and more prone to “gibberish”, says 0xabad1dea.
+
+This ‘generative model’ reduces duplication between users but “is at odds with one of the most basic principles of reliability: determinism”, says 0xabad1dea.
+
+She demonstrates this with differing implementations of a moon phase calculator generated from identical inputs.
+
+The researcher also notes that Copilot is currently “unreliable” at generating comments and offers variables with “useless names”, potentially making outputs “utterly inscrutable”.
+
+Security flaws
+
+When she fed Copilot with general purpose HTML parser with regex – an ill-advised input, she says – Copilot “declined to use regex and wrote a complete C function and a decent main() to drive it”.
+
+Alarmingly, however, “if the parsed string contains no >, the parser will run off the end of the buffer and crash”, among other parsing issues.
+
+There was at least qualified praise for the presence of “a surprising amount of delicate pointer math”, and for Copilot being “80% of the way to something that could conceivably be considered a basic parser”.
+
+The AI tool also “blundered right into the most classic security flaw of the early 2000s: a PHP script taking a raw GET variable and interpolating it into a string to be used as an SQL query, causing SQL injection”, says 0xabad1dea. “Now PHP’s notorious propensity for security issues is infecting even non-human life.
+
+
+
+
+Read more of the latest machine learning security news and analysis
+
+
+
+
+“Furthermore, when prompted with shell_exec(), Copilot was happy to pass raw GET variables to the command line.”
+
+Prompted “for a basic listening socket”, Copilot also created “a basic off-by-one buffer error” in the listening function.
+
+The researcher was unable to verify whether Copilot excludes secret information such as API keys and passwords from its training model.
+
+“The most realistic risk here is a naive programmer accepting an autocomplete for a cryptographic key which sets it to be a random-looking but dangerously low-entropy value,” she said.
+
+‘Neural network see, neural network do’
+
+“The inevitable conclusion is that Copilot can and will write security vulnerabilities on a regular basis, especially in memory-unsafe languages,” says the researcher.
+
+While Copilot excels at generating boilerplate that may “bog down” programmers and accurately guesses constants and setup functions, it’s less adroit at handling application logic, she says.
+
+“Copilot cannot always maintain sufficient context to write correct code across many lines”, 0xabad1dea explains, while there’s no apparent “systematic separation of professionally produced code” from the profusion of “buggy code on GitHub”.
+
+She added: “Neural network see, neural network do”.
+
+Supervising a toddler
+
+0xabad1dea tells The Daily Swig that she expects GitHub to be diligent in addressing Copilot’s shortcomings, but that developers should “be realistic about the limitations”.
+
+She likens the Copilot model to a toddler. “They will impress you with how much they have learned, but they will still always lack context and experience. And of course, they shouldn’t be left unsupervised.”
+
+0xabad1dea also notes that a below-the-line commenter flagged a “tiny flaw” in an Easter date calculator she generated through Copilot.
+
+“So even when I was on the lookout, I missed something. Of course this can happen with human-written code as well, but the fact that we have so much trouble just means we don’t need our tools introducing new random faults.”
+
+The Daily Swig invited GitHub to comment on the findings but we have yet to hear back. We will update the story if we do.
+
+
+
+
+YOU MIGHT ALSO LIKE Critical vulnerabilities in open source text editor Etherpad could lead to remote takeover
+
+AI DevSecOps Research Machine Learning DevOps Secure Development Privacy Open Source Software Hacking News Hacking Techniques Vulnerabilities SQL Injection PHP Organizations Industry News
 
 Adam Bannister
 
 @Ad_Nauseum74
 
 Latest Posts
-Less.js flaw causes website to leak AWS secret keys
-Issues in plugin feature can leave users at risk
-China puts national security protection at the center of new data privacy law
-Broad and vague definition of sensitive information worries lawyers
-Death to DOM XSS
-Google checks rise of complex threat with Trusted Types
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+Open source web container now patched against six-year-old bug
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+Overwritten
+Vulnerabilities in open source text editor Etherpad could lead to takeover
 Related stories
-Eight arrests made as Eurojust dismantles €2m phishing fraud
-12 July 2021
-Less.js flaw causes website to leak AWS secret keys
-09 July 2021
-China puts national security protection at the center of new data privacy law
-09 July 2021
-Death to DOM XSS
-Google checks rise of complex threat with Trusted Types
-09 July 2021
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+14 July 2021
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+14 July 2021
+DevSecAI
+GitHub Copilot prone to writing security flaws
+14 July 2021
+Overwritten
+Vulnerabilities in open source text editor Etherpad could lead to takeover
+14 July 2021
+
+Burp Suite
+
+Web vulnerability scanner
+Burp Suite Editions
+Release Notes
+ 
+
+Vulnerabilities
+
+Cross-site scripting (XSS)
+SQL injection
+Cross-site request forgery
+XML external entity injection
+Directory traversal
+Server-side request forgery
+ 
+
+Customers
+
+Organizations
+Testers
+Developers
+ 
+
+Company
+
+About
+PortSwigger News
+Careers
+Contact
+Legal
+Privacy Notice
+ 
+
+Insights
+
+Web Security Academy
+Blog
+Research
+The Daily Swig
+ 
+Follow us
+
+© 2021 PortSwigger Ltd.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[REvil infrastructure disappearance sparks speculation about fate of infamous ransomware slingers | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/revil-infrastructure-disappearance-sparks-speculation-about-fate-of-infamous-ransomware-slingers</link>
+            <guid>https://portswigger.net/daily-swig/revil-infrastructure-disappearance-sparks-speculation-about-fate-of-infamous-ransomware-slingers</guid>
+            <pubDate>Wed, 14 Jul 2021 19:57:32 GMT</pubDate>
+            <content:encoded><![CDATA[REvil infrastructure disappearance sparks speculation about fate of infamous ransomware slingers
+John Leyden 14 July 2021 at 16:09 UTC
+Updated: 14 July 2021 at 16:22 UTC
+Cybercrime Ransomware Malware
+
+Resident REvil
+
+Websites associated with REvil – the infamous ransomware group blamed for attacks on Kaseya, Travelex, and meat supplier JBS – have dropped offline, sparking feverish speculation in the process.
+
+Payment and data leak sites on the dark web associated with REvil became unreachable on Wednesday (July 13). The “outage” continued into Thursday.
+
+
+
+
+RELATED REvil ransomware attackers demand $70m following Kaseya VSA supply chain attack
+
+
+
+
+Ransomware groups periodically disappear, only to reinvent themselves under new branding.
+
+Other possibilities include interdiction by law enforcement – US authorities have shown themselves more willing to actively dismantle cybercrime infrastructure of late – or even interference from rival cybercrime gangs.
+
+Laying low?
+
+The Sodinokibi ransomware, widely attributed to the REvil gang and distributed by affiliates through a Ransomware-as-a-Service (RaaS) business model, has been a scourge of corporate security over the last two years or more.
+
+The group’s malware-fuelled cybercrime activity has intensified of late with the Kaseya supply chain attack, and it could be that the REvil crew have stepped back in order to allow things to cool off.
+
+
+
+
+BACKGROUND What is Sodinokibi? The ransomware behind the Travelex attack
+
+
+
+
+The success of REvil in making millions of dollars means that a return in some form is perhaps the most likely scenario.
+
+Oleg Skulkin, a lead digital forensics analyst at security firm Group-IB, commented:
+
+REvil have either decided to shut down their infrastructure themselves to then start from scratch and continue working under a new name with updated tools (as it is was the case with Ako ransomware that then evolved to Ranzy) or, in another scenario, REvil infrastructure might have gone down as a result of a law enforcement operation.
+
+Police action
+
+REvil’s accounts on hacker forums have been blocked by the administration, according to Group-IB, as a precaution against law enforcement action on the forum. This disavowal suggests the denizens of the dark web think the authorities might have intervened.
+
+“The possible police action against REvil isn’t likely to become a big problem for their affiliates since the latter jump from one ransomware-as-a-service program to another, or even work with multiple RaaS [suppliers] at the same time,” Skulkin explaine
+
+
+
+
+Catch up on the latest ransomware-related news and analysis
+
+
+
+
+Vladimir Kuskov, head of threat exploration at antivirus vendor Kaspersky, added that known REvil representatives have been banned from a darknet cybercrime forum.
+
+“Resources related to REvil, which included a blog with information about their attacks, as well as payment sites, went offline,” Kuskov said.
+
+“A representative of this group was also banned from a popular darknet forum where participants of this criminal industry communicate.”
+
+The security pro added: “Why the websites went down is not yet clear, however, circumstances suggest that REvil might stop its operations, following the path DarkSide, Avaddon, and Babuk took.”
+
+Political pressure
+
+REvil is a Russian-speaking RaaS operation that’s thought to be based in Russia. The group avoids targeting Russian institutions via system language detection that’s built into the malware code.
+
+The US has threatened retaliation against Russia in the wake of the Kaseya attack and this could be a factor in the shutdown.
+
+“My guess is that it was political pressure, from the US to Russia and Russia to them,” according to BlackBerry threat researcher Eric Milam, who has previous done extensive research into the threat actors.
+
+Milam told The Daily Swig: “When the spotlight is on a criminal group, they may choose to step away for a while.
+
+“They often use this time to make a ‘better product’ and come back later. This is not unlike companies that start to get a bad reputation, they tend to rebrand themselves and come back as something ‘different’, even if it’s just their name.”
+
+Some evidence suggests that REvil sprang from the ashes of GandCrab, an earlier and now defunct ransomware operation.
+
+Milam and his colleagues are well placed to attribute further attacks to those behind REvil, should the gang return.
+
+“Our team would focus mainly on the hard evidence of any new variants,” Miam explained. “That would include things like fingerprinting the file/code, the modes of operation, location of attacks, etc. Most attackers won’t really change their core techniques.”
+
+
+
+
+Additional reporting by Jessica Haworth
+
+
+
+
+YOU MIGHT LIKE Research exposes vulnerabilities in IP camera firmware used by multiple vendors
+
+Cybercrime Ransomware Malware Russia Hacking News Hacking Techniques Dark Web Fraud Analysis Cyber-attacks Network Security Database Security Cloud Security Email Security Social Engineering Phishing Supply Chain Attacks Organizations Enterprise Cyber Warfare Data Leak Data Breach Hacking Tools US North America
+
+John Leyden
+
+@jleyden
+
+Latest Posts
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+Open source web container now patched against six-year-old bug
+DevSecAI
+GitHub Copilot prone to writing security flaws
+Overwritten
+Vulnerabilities in open source text editor Etherpad could lead to takeover
+Related stories
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+14 July 2021
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+14 July 2021
+DevSecAI
+GitHub Copilot prone to writing security flaws
+14 July 2021
+Overwritten
+Vulnerabilities in open source text editor Etherpad could lead to takeover
+14 July 2021
+
+Burp Suite
+
+Web vulnerability scanner
+Burp Suite Editions
+Release Notes
+ 
+
+Vulnerabilities
+
+Cross-site scripting (XSS)
+SQL injection
+Cross-site request forgery
+XML external entity injection
+Directory traversal
+Server-side request forgery
+ 
+
+Customers
+
+Organizations
+Testers
+Developers
+ 
+
+Company
+
+About
+PortSwigger News
+Careers
+Contact
+Legal
+Privacy Notice
+ 
+
+Insights
+
+Web Security Academy
+Blog
+Research
+The Daily Swig
+ 
+Follow us
+
+© 2021 PortSwigger Ltd.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[HTTP request smuggling vulnerability in Apache Tomcat ‘has been present since 2015’ | The Daily Swig]]></title>
+            <link>https://portswigger.net/daily-swig/http-request-smuggling-vulnerability-in-apache-tomcat-has-been-present-since-2015</link>
+            <guid>https://portswigger.net/daily-swig/http-request-smuggling-vulnerability-in-apache-tomcat-has-been-present-since-2015</guid>
+            <pubDate>Wed, 14 Jul 2021 19:57:31 GMT</pubDate>
+            <content:encoded><![CDATA[HTTP request smuggling vulnerability in Apache Tomcat ‘has been present since 2015’
+Jessica Haworth 14 July 2021 at 16:52 UTC
+Vulnerabilities Open Source Software java
+
+Open source web container now patched against six-year-old bug
+
+A HTTP request smuggling vulnerability in Apache Tomcat has been present “since at least 2015”, the project maintainers have warned.
+
+Apache Tomcat is an open source Java servlet container which is maintained by the Apache Software Foundation.
+
+In release notes posted online (insecure link), maintainers of Tomcat revealed that the vulnerability was discovered in multiple versions of the software.
+
+“Apache Tomcat did not correctly parse the HTTP transfer-encoding request header in some circumstances leading to the possibility to request smuggling when used with a reverse proxy,” it reads.
+
+“Specifically: Tomcat incorrectly ignored the transfer-encoding header if the client declared it would only accept an HTTP/1.0 response; Tomcat honoured the identify encoding; and Tomcat did not ensure that, if present, the chunked encoding was the final encoding.”
+
+
+
+
+Read more of the latest security vulnerability news
+
+
+
+
+Mark Thomas, member of the Apache Tomcat Project Management Committee, told The Daily Swig that the vulnerability “has been present in the Tomcat codebase since at
+least 2015”.
+
+“It may have been present before that, but that is earliest release of the current supported versions,” Thomas said, but added that the committee – which is entirely staffed by volunteers – doesn’t check older, unsupported versions.
+
+Tomcat server patch
+
+HTTP request smuggling is a hacking technique that can be used to interfere with the way a website processes sequences of HTTP requests that are received from one or more users.
+
+Request smuggling vulnerabilities are often critical and can allow an attacker to bypass security controls, gain unauthorized access to sensitive data, and directly compromise other application users.
+
+The vulnerability was reported to the Apache Software Foundation by researchers Bahruz Jabiyev, Steven Sprecher, and Kaan Onarlioglu of NEU SecLab, Northeastern University in Boston, Massachusetts.
+
+It has yet to be assigned a CVSS score. However, Tomcat security team rated it as ‘important’ on a scale of ‘low, moderate, important, or critical’.
+
+
+
+
+READ MORE HTTP request smuggling: HTTP/2 opens a new attack tunnel
+
+
+
+
+The vulnerability was reported “responsibly”, Thomas said, on May 7, 2021. “We had a patch (actually, a series of three patches) agreed privately by May 11,” Thomas told The Daily Swig.
+
+Those patches were made public on Jun 8, although the public announcement was delayed until July 12, since certain versions contained a significant regression in JSP processing, Thomas said.
+
+Users of the affected versions should update to Apache Tomcat 10.0.7 or later, 9.0.48 or later, or 8.5.68 or later. The issue was fixed in 9.0.47 and 8.5.67 “but the release votes for those versions did not pass”, said Thomas.
+
+
+
+
+YOU MAY ALSO LIKE ‘Being serious about security is a must’ – Apache Software Foundation custodians on fulfilling its founding mission
+
+Vulnerabilities Open Source Software java Secure Development Hacking News Hacking Techniques Research Industry News
+
+Jessica Haworth
+
+@JesscaHaworth
+
+Latest Posts
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+DevSecAI
+GitHub Copilot prone to writing security flaws
+Overwritten
+Vulnerabilities in open source text editor Etherpad could lead to takeover
+Related stories
+Apache Tomcat devs alerted to six-year-old HTTP request smuggling bug
+14 July 2021
+REvil disappearance
+Speculation is rife over fate of infamous ransomware slingers
+14 July 2021
+DevSecAI
+GitHub Copilot prone to writing security flaws
+14 July 2021
+Overwritten
+Vulnerabilities in open source text editor Etherpad could lead to takeover
+14 July 2021
 
 Burp Suite
 

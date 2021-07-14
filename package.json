@@ -7,7 +7,8 @@
     "initialize": "node initialize.js",
     "diff": "node diff.js",
     "crawl": "node crawl.js",
-    "feed": "node genfeed.js"
+    "feed": "node genfeed.js",
+    "all": "node all.js"
   },
   "repository": {
     "type": "git",
