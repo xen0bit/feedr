@@ -9,7 +9,7 @@ module.exports = {
         "script": "all.js",
         "instances": 1,
         "exec_mode": 'fork',
-        "cron_restart": "*/5 * * * *",
+        "cron_restart": "*/10 * * * *",
         "watch": false,
         "autorestart": false
       }
