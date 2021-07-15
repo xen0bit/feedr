@@ -121,7 +121,7 @@ const Feed = require('feed').Feed;
                 title: post.title,
                 id: post.url,
                 link: post.url,
-                content: post.text.replace('\n', '&lt;br/&gt;'),
+                content: post.text.replace('\n', '\r\n'),
                 date: new Date(post.lastmodified)
                 // image: post.image
             });
