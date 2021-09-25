@@ -12,6 +12,15 @@ module.exports = {
         "cron_restart": "*/10 * * * *",
         "watch": false,
         "autorestart": false
+      },
+      {
+        "exec_mode": "fork_mode",
+        "script": "./bin/www",
+        "name": "feedr-api",
+        "env": {
+          "PORT": 8080,
+          "NODE_ENV": "production"
+        }
       }
     ]
   };

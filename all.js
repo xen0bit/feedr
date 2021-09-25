@@ -121,7 +121,7 @@ const Feed = require('feed').Feed;
                 title: post.title,
                 id: post.url,
                 link: post.url,
-                content: post.text.replace('\n', '\r\n'),
+                content: post.text,
                 date: new Date(post.lastmodified)
                 // image: post.image
             });
@@ -129,7 +129,7 @@ const Feed = require('feed').Feed;
 
 
         //console.log(feed.rss2());
-        fs.writeFileSync("/home/ubuntu/remyhax.xyz/public/feedr/" + feedSources[feedIndex].id + ".xml", feed.rss2());
+        fs.writeFileSync("./public/feeds/" + feedSources[feedIndex].id + ".xml", feed.rss2());
     }
 
 })();

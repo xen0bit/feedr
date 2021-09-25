@@ -22,7 +22,10 @@
   "homepage": "https://github.com/xen0bit/feedr#readme",
   "dependencies": {
     "better-sqlite3": "^7.4.1",
+    "express": "^4.17.1",
     "feed": "^4.2.2",
+    "morgan": "^1.10.0",
+    "multiparty": "^4.2.2",
     "puppeteer": "^10.1.0"
   }
 }
